@@ -1,79 +1,14 @@
-# Programación II — Tarea 04
+> Why do I have a folder named ".expo" in my project?
 
-## Nombre del estudiante
+The ".expo" folder is created when an Expo project is started using "expo start" command.
 
-Kevin Segura
+> What do the files contain?
 
-## Nombre de la aplicación
+- "devices.json": contains information about devices that have recently opened this project. This is used to populate the "Development sessions" list in your development builds.
+- "settings.json": contains the server configuration that is used to serve the application manifest.
+- "dev/logs/": contains structured JSONL event logs from CLI commands (e.g. start.log, export.log). These are truncated on each run.
 
-Gestor de Estudiantes
+> Should I commit the ".expo" folder?
 
-## Descripción
-
-Aplicación móvil desarrollada con React Native, Expo y TypeScript como parte de la Tarea 04 de Programación II.
-
-La aplicación permite visualizar un contador, administrar una lista de estudiantes y consultar estadísticas sobre la cantidad de estudiantes registrados.
-
-La aplicación cuenta con tres pestañas:
-
-* **Inicio:** muestra el nombre de la aplicación y un contador administrado mediante `useState`.
-* **Estudiantes:** muestra una lista de estudiantes y permite agregar nuevos estudiantes.
-* **Estadísticas:** muestra la cantidad actual de estudiantes registrados y utiliza `useEffect` para reaccionar a los cambios en el estado.
-
-## Tecnologías utilizadas
-
-* React Native
-* Expo
-* TypeScript
-* React Navigation
-* `useState`
-* `useEffect`
-* Git
-* GitHub
-
-## Funcionalidades
-
-* Navegación mediante Tabs.
-* Contador funcional.
-* Lista de estudiantes.
-* Uso de objetos dentro del estado.
-* Agregar nuevos estudiantes.
-* Actualización del arreglo utilizando el operador spread.
-* Conteo de estudiantes registrados.
-* Uso de `useEffect`.
-
-## Instalación
-
-1. Clonar el repositorio:
-
-```bash
-git clone URL_DEL_REPOSITORIO
-```
-
-2. Entrar a la carpeta:
-
-```bash
-cd ProgramacionII-Tarea04-KevinSegura
-```
-
-3. Instalar las dependencias:
-
-```bash
-npm install
-```
-
-4. Ejecutar el proyecto:
-
-```bash
-npx expo start
-```
-
-## Video de evidencia
-
-Video de funcionamiento de la aplicación:
-
-PEGAR_AQUÍ_EL_ENLACE_DEL_VIDEO
-
-## Autor
-
-Kevin Segura
+No, you should not share the ".expo" folder. It does not contain any information that is relevant for other developers working on the project, it is specific to your machine.
+Upon project creation, the ".expo" folder is already added to your ".gitignore" file.
